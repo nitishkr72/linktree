@@ -1,28 +1,21 @@
 import './App.css';
 import Header from './Header';
-
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
 import SignInSignUp from './screens/SignInSignUp';
 import Home from './screens/Home';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <SignInSignUp />,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-  }
-]);
 
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <div style={{width: "100vw", height: "100vh", overflowY: "scroll"}}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" Component={SignInSignUp} />
+          <Route path='/home' Component={Home} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

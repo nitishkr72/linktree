@@ -59,7 +59,7 @@ function Header() {
 
     return (
 
-        <div style={{ marginTop: "2rem", width: "100%" }}>
+        <div style={{ marginTop: "2rem" }}>
             <div style={{ position: "relative", marginTop: "3rem" }}>
                 <div style={{ display: "flex", justifyContent: "flex-end" }} on>
                     <div style={{ position: "fixed", width: 40, height: 40, backgroundColor: "#F0F0F0", display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", border: 1, borderStyle: "solid", borderColor: "#ccc" }}>
